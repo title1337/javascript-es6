@@ -1,5 +1,5 @@
 let studentProfile = {
-  name: "John",
+  name: 'John',
   age: 20,
   scores: {
     thai: 40,
@@ -12,6 +12,6 @@ let studentScores = {
   tech: 100,
 };
 
-// Start coding here
+let newStudentProfile = { ...studentProfile, ...studentScores };
 
 console.log(newStudentProfile);
