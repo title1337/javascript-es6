@@ -1,14 +1,18 @@
 let studentProfile = {
-  name: "John",
+  name: 'John',
   age: 20,
   scores: {
     thai: 40,
   },
-  hobbies: ["Football", "Coding"],
+  hobbies: ['Football', 'Coding'],
 };
 
-let additionalHobbies = ["Painting", "Yoga"];
+let additionalHobbies = ['Painting', 'Yoga'];
 
-// Start coding here
+const newStudentProfile = { ...studentProfile };
+newStudentProfile.hobbies = [
+  ...newStudentProfile.hobbies,
+  ...additionalHobbies,
+];
 
 console.log(newStudentProfile);
